@@ -8,10 +8,10 @@ def drunk_accidents(deaths):
 score = 0
     print "Welcome to the drunk driving test!"
     print " "
-    print " A.) "
-    print " B.) "
-    print " C.) "
-    Question_1  = raw_input("Question 1:  ")
+    print " A.) .08 BAC"
+    print " B.) .05 BAC"
+    print " C.) The limit is zero"
+    Question_1  = raw_input("Question 1: What is the legal limit for BAC")
     #Defining the question and using the users Raw input so that we can see if they got the right answer or not.
     #The code below is seeing if they type in the right answer, and using both cases of A incase they do think the quiz is case sensative
     if Question_1 == "A" or "a":
@@ -20,42 +20,45 @@ score = 0
     else:
         score = score + 0
     print " "
-    print " A.) "
-    print " B.) "
-    print " C.) "
-    Question_2  = raw_input("Question 2:  ")
-    if Question_2 == "A" or "a":
+    print " A.) December "
+    print " B.) July"
+    print " C.) March"
+    Question_2  = raw_input("Question 2: What month do drunk driving accidents occur the most ")
+    if Question_2 == "B" or "b":
         score = score + 1
     else:
         score = score + 0
     print " "
-    print " A.) "
-    print " B.) "
-    print " C.) "
-    Question_3  = raw_input("Question 3:  ")
+    print " A.) Motorcycle "
+    print " B.) Car"
+    print " C.) Trucks"
+    Question_3  = raw_input("Question 3: What type of motorvehicle get into more drunk driving accidents ")
     if Question_3 == "A" or "a":
         score = score + 1
+        print "In 2016, drunk driving accidents by vehicle type were 25 percent for motorcycles, 21 percent for passenger cars, and 20 percent for the “light trucks” category (22% for pickup trucks, 19% for SUVs, and 12% for vans)."
     else:
         score = score + 0
+        print "In 2016, drunk driving accidents by vehicle type were 25 percent for motorcycles, 21 percent for passenger cars, and 20 percent for the “light trucks” category (22% for pickup trucks, 19% for SUVs, and 12% for vans)."
     print " "
-    print " A.) "
-    print " B.) "
-    print " C.) "
-    Question_4  = raw_input("Question 4:  ")
-    if Question_4 == "A" or "a":
+    print " A.) 16-20 "
+    print " B.) 35-44"
+    print " C.) 21-24"
+    Question_4  = raw_input("Question 4: Which driving age range causes the most drunk driving accidents ")
+    if Question_4 == "C" or "c":
         score = score + 1
     else:
         score = score + 0
     print " "
-    print " A.) "
-    print " B.) "
-    print " C.) "
-    Question_5  = raw_input("Question 5:  ")
+    print " A.) Texas "
+    print " B.) Florida "
+    print " C.) California"
+    Question_5  = raw_input("Question 5: Which state has the most fatalties due to drunk driving  ")
     if Question_5 == "A" or "a":
         score = score + 1
     else:
         score = score + 0
-    if score >= 3:
+    if score >= 4:
+    #At the end due to there being 5 questions, we need to make sure that the user gets 4 out of 5 to pass so we know they got a jist of what the quiz is
         print "You passed! It  is very important to know what drunk driving could do, and how lethal it is."
     else:
         print "You did not pass! Learning the information about drunk driving is urgent, because one day it will help prevent you from ending the life of someone else"
@@ -63,12 +66,12 @@ return drunk_accidents
 #The end of the code is going to print the statistics of drivers that get into drunk driving accidents
 print "For every skull, 1,000 people died in a drunk driving accident:"
 text = ""
+#The range prints the skull 10 times due to the amnoutof drunk driving accidents that happen per 1000
 for fatalties in range(10):
-    text = text + str(fatalties)
-    print "💀",
 print ""
-print ""
+print "💀"
 print "For every car, an accident has occured:",
+#The range prints the car 10 times due to the amnoutof drunk driving accidents that happen per 1000
 for accidents in range(40):
     text = text + str(fatalties)
     print "🚘",
