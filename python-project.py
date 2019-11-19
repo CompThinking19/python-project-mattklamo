@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #This program is going to be a interactive questionaire to determine whether a person is going to make the right choice when it comes to drinking and driving
 #A function is going to be created in order to get this interactive game going, and a dictionary is also going to be made for this case
 #Based off the answers they give to the questions they answer, it will determine if they are going to make the right choice or not. Using the data from this sheet to determine if they know the  rules  to driving while intoxicated
