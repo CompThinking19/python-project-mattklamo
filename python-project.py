@@ -11,6 +11,7 @@ class Question:
           self.prompt = prompt
           self.answer = answer
 #questions is going to take in all the questions for the quiz and display the questions along with the answers for this multiple choice quiz. This is an important part due to this being a bulk of the quiz itself. Without the question list, there would be no quiz at all.
+#["Question 1:What is the legal limit for BAC?\n(a).08 BAC\n(b).05 BAC\n(c)The limit is zero", "a"]
 questions = [
      "Question 1:What is the legal limit for BAC?\n(a).08 BAC\n(b).05 BAC\n(c)The limit is zero",
      "Question 2:What month do drunk driving accidents occur the most?\n(a) March\n(b)July\n(c)Decemeber",
@@ -25,6 +26,7 @@ questions = [
 ]
 #answers is going to go through each prompt of the questions and make sure it has an answer that correlates correctly with the question. Another very important part of the code, because the answers are needed to see if the user was able to input the right answer.
 answers = [
+#Question(questions[0][0], questions[0][1])
      Question(questions[0],"a"),
      Question(questions[1],"b"),
      Question(questions[2],"a"),
