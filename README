@@ -1,0 +1,24 @@
+  The reason that I decided to do a project on drunk driving, is because the problem is not addressed properly.
+Many of my friends do not understand that serious effects that it could have, no only on themselves, but with
+other people. While I was in high school, there were many lectures that talked about drunk driving, and the
+outcomes that can come with it. None of that correlates to a majority of students, so I thought a better way
+to present this issue was through an interactive quiz, and a visual of the amount of fatalities that occur
+as a result of drunk driving. Personally I'd rather view something more visually than another person just telling
+me not to do something. Not only does drunk driving affect my friends, but it affects everyone I know. Anyone
+could get into a car while intoxicated and kill someone I know. It has already happened to so many others, and I
+wanted the problem to be more widely known. When I started this project, I had a tough time to get it started. I
+first wanted to get the visual for the code started, so that is what i started first. Prior to what I have my code
+now, I was going based off of print statements exclusively which was making my code dry and very basic. Through the
+range method, is where I was able to get the best results for the amount of skull emojis that I wanted to print, as
+well as the cars. I thought to print 10,000 skulls was a little too much so I thought it would be better to say that
+each skull or car represents 1,000 people so that the visual is not cluttered with 50,000 skulls and cars. Then came
+the part to make the quiz. From a data filled PDF with tons of information on drunk driving through out the United
+States, I decided that is where a chunk of the data for the quiz is going to come from. From the information that I
+was able to gather from the PDF, I wanted the quiz to be an insight on information that everyone should know before
+they decide to get in a car before driving. With some as common knowledge, to things that caught me by surprise, the
+quiz was first made out of 5 questions, but then it was expanded to 10. The code, just like the visual, was very basic
+to begin with. Lots of if statements throughout the code which made the code very very dry. Then the thought of using
+lists seems more of a clean and organized way to write the code. I was able to create a class surrounding the whole drunk
+driving questions and answers with an __init__ function. Then I had to make a quiz function so that the questions and answers
+could be run through a for loop to keep the quiz going. The if statement with the score was important so that people could
+know if they were able to pass the test or not which is what I wanted for someone to get out of the quiz itself.
