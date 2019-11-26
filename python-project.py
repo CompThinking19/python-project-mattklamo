@@ -11,7 +11,6 @@ class Question:
           self.prompt = prompt
           self.answer = answer
 #questions is going to take in all the questions for the quiz and display the questions along with the answers for this multiple choice quiz. This is an important part due to this being a bulk of the quiz itself. Without the question list, there would be no quiz at all.
-#["Question 1:What is the legal limit for BAC?\n(a).08 BAC\n(b).05 BAC\n(c)The limit is zero", "a"]
 questions = [
      "Question 1:What is the legal limit for BAC?\n(a).08 BAC\n(b).05 BAC\n(c)The limit is zero",
      "Question 2:What month do drunk driving accidents occur the most?\n(a) March\n(b)July\n(c)Decemeber",
@@ -26,24 +25,17 @@ questions = [
 ]
 #answers is going to go through each prompt of the questions and make sure it has an answer that correlates correctly with the question. Another very important part of the code, because the answers are needed to see if the user was able to input the right answer.
 answers = [
-#Question(questions[0][0], questions[0][1])
      Question(questions[0],"a"),
      Question(questions[1],"b"),
      Question(questions[2],"a"),
      Question(questions[3],"c"),
-     Question(questiqons[4],"a"),
+     Question(questions[4],"a"),
      Question(questions[5],"b"),
      Question(questions[6],"b"),
      Question(questions[7],"a"),
      Question(questions[8],"c"),
      Question(questions[9],"a"),
 ]
-if questions[0, 2, 4, 7, 9] != "a"
-    print "The correct asnwer is a"
-if questions[1, 5, 6] != "b"
-    print "The correct asnwer is b"
-if questions[3, 8] != "c"
-    print "The correct asnwer is c"
 def quiz(answers):
      score = 0
      #score equal to zero due to it being added by 1 each time the user inputs the right answer
@@ -52,8 +44,8 @@ def quiz(answers):
           if answer == question.answer:
               #with the users raw input, need to see if the answer that put is equal to the answer in the answers list. If there answer does equal the correct then the score variable will go up 1
                score = score + 1
-          elif  answer != question.answers:
-               print "Sorry Incorrect"
+          else:
+              print("Incorrect! Sorry")
      if score >= 8:
          # the score has to be greater than 8 so that the user can know if they really got a jist of the information that was displayed throughout the quiz. It is an important takeaway from the program if they are able to take away information that they did not know prior to taking the quiz.
         print("You passed! You got", score, "out of", len(answers), "It is very important to know what drunk driving could do, and how lethal it is.")
