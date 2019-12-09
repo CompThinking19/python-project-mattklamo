@@ -1,0 +1,11 @@
+Comments
+Really good, descriptive comments throughout. Exactly what I was looking for: not just what but why.
+
+Code Quality
+I was really pleased with your use of a class to make asking the questions easier and using a list to store both the questions and answers and then iterating through the list. There are ways the code could have been DRYer, but you covered the big pieces in your class. I'm especially happy you mastered the "init" function.
+
+Ambition
+Your README gave a really good, detailed justification of your project, and you also had an excellent project narrative.
+
+Aesthetics
+The quiz questions are hard-hitting and relevant, and you have a good sense of what will affect a player. Printing the skulls at the end happens a bit quickly, but the thought, as laid out in your README, is a good one.
